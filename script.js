@@ -1,4 +1,4 @@
-// ---------- Íconos flotantes de fondo ----------
+
 const container = document.querySelector('.floating-icons');
 const emojis = ['🤖', '⛏️', '💎', '⚡'];
 
@@ -13,7 +13,6 @@ for (let i = 0; i < 10; i++) {
   container.appendChild(el);
 }
 
-// ---------- Navegación entre secciones ----------
 const buttons = document.querySelectorAll('.nav-btn');
 const tabs = document.querySelectorAll('.tab-content');
 
