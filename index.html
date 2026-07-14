@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santufex | Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="floating-icons"></div>
+
+  <header>
+    <h1>Santu<span class="highlight">fex</span></h1>
+    <p class="subtitle">Discord Bot Developer | Minecraft Plugin Developer</p>
+
+    <nav>
+      <button class="nav-btn nav-principal" data-tab="principal">◄ PRINCIPAL ►</button>
+      <button class="nav-btn nav-info" data-tab="info">◄ INFORMACIÓN ►</button>
+      <button class="nav-btn nav-discord" data-tab="discord">◄ DISCORD BOT ►</button>
+      <button class="nav-btn nav-minecraft" data-tab="minecraft">◄ MINECRAFT ►</button>
+      <button class="nav-btn nav-contacto" data-tab="contacto">◄ CONTACTO ►</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PRINCIPAL -->
+    <section class="card tab-content active" id="tab-principal">
+      <h2><span class="icon">🏠</span> Bienvenido</h2>
+      <p>
+        Este es mi portafolio como desarrollador. Acá vas a encontrar
+        info sobre mí, mi bot de Discord (FexBot) y los plugins que
+        estoy creando para Minecraft.
+      </p>
+    </section>
+
+    <!-- INFORMACIÓN -->
+    <section class="card tab-content" id="tab-info">
+      <h2><span class="icon">🪪</span> Sobre Mí</h2>
+      <p>
+        ¡Hola! Soy Santufex. Me gusta programar y crear cosas para
+        comunidades y servidores: bots de Discord,
+        y plugins/servidores de Minecraft. Voy aprendiendo de a poco
+        y disfruto armar sistemas completos, desde tickets y logs
+        hasta mecánicas nuevas dentro del juego.
+      </p>
+      <div class="tags">
+        <span>💻 Node.js / discord.js</span>
+        <span>⛏️ Minecraft Plugins</span>
+        <span>🧩 Sistemas a medida</span>
+        <span>🎮 Roblox Studio</span>
+      </div>
+    </section>
+
+    <!-- DISCORD BOT -->
+    <section class="card tab-content" id="tab-discord">
+      <h2><span class="icon">🤖</span> FexBot</h2>
+      <p>
+        Bot de Discord hecho con Node.js y discord.js v14 
+        Incluye sistemas completos
+      </p>
+      <ul class="project-list">
+        <li>🎫 Sistema de Tickets, Postulaciones etc</li>
+        <li>📋 Registro de Logs </li>
+        <li>🚫 Sistema bienvenida, invitaciónes, entre muchas cosas más</li>
+        <li>⚙️ Sistema de moderación </li>
+      </ul>
+    </section>
+
+    <!-- MINECRAFT -->
+    <section class="card tab-content" id="tab-minecraft">
+      <h2><span class="icon">⛏️</span> Minecraft</h2>
+      <p>
+        Desarrollo y configuración de servidores/plugins para Minecraft,
+        enfocado en darle mecánicas y experiencias nuevas a la comunidad.
+      </p>
+      <ul class="project-list">
+        <li>🔌 Plugin personalizado — FexGuard - Plugin de anticheat</li>
+        <li>🖥️ Configuración de servidor / network</li>
+        <li>🛠️ Optimización de rendimiento</li>
+      </ul>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="card tab-content" id="tab-contacto">
+      <h2><span class="icon">📩</span> Contacto</h2>
+      <p>¿Querés hablar de un proyecto? Escribime por acá:</p>
+      <div class="contact-list">
+        <a href="#" target="_blank">💬 Discord</a>
+        <a href="#" target="_blank">🐙 GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
