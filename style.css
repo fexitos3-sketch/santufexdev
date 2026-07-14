@@ -295,18 +295,47 @@ main {
 }
 
 .plugin-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
 }
 
-.plugin-tag {
+.plugin-card {
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(255,255,255,0.1);
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  color: #eee;
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: 0.2s ease;
+}
+
+.plugin-card:hover {
+  border-color: rgba(74, 222, 128, 0.4);
+  transform: translateY(-2px);
+}
+
+.plugin-label {
+  display: inline-block;
+  background: rgba(74, 222, 128, 0.15);
+  color: #4ade80;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.plugin-name {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.plugin-desc {
+  font-size: 0.8rem;
+  color: #bbb;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* ---------- Contacto section ---------- */
