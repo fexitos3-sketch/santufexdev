@@ -30,8 +30,8 @@
       <h2><span class="icon">🏠</span> Bienvenido</h2>
       <p>
         Este es mi portafolio como desarrollador. Acá vas a encontrar
-        info sobre mí, mi bot de Discord (FexBot) y los plugins que
-        estoy creando para Minecraft.
+        info sobre mí, mi bot de Discord y los plugins que estoy
+        creando para Minecraft.
       </p>
     </section>
 
@@ -40,10 +40,9 @@
       <h2><span class="icon">🪪</span> Sobre Mí</h2>
       <p>
         ¡Hola! Soy Santufex. Me gusta programar y crear cosas para
-        comunidades y servidores: bots de Discord,
-        y plugins/servidores de Minecraft. Voy aprendiendo de a poco
-        y disfruto armar sistemas completos, desde tickets y logs
-        hasta mecánicas nuevas dentro del juego.
+        comunidades y servidores: bots de Discord, y plugins/servidores
+        de Minecraft. Voy aprendiendo de a poco y disfruto armar sistemas
+        completos, desde tickets y logs hasta mecánicas nuevas dentro del juego.
       </p>
       <div class="tags">
         <span>💻 Node.js / discord.js</span>
@@ -55,17 +54,53 @@
 
     <!-- DISCORD BOT -->
     <section class="card tab-content" id="tab-discord">
-      <h2><span class="icon">🤖</span> FexBot</h2>
+      <h2><span class="icon">🤖</span> Bots de Discord</h2>
       <p>
-        Bot de Discord hecho con Node.js y discord.js v14 
-        Incluye sistemas completos
+        Bots multifuncionales con sistemas de tickets, moderación,
+        blacklist compartida y mucho más.
       </p>
-      <ul class="project-list">
-        <li>🎫 Sistema de Tickets, Postulaciones etc</li>
-        <li>📋 Registro de Logs </li>
-        <li>🚫 Sistema bienvenida, invitaciónes, entre muchas cosas más</li>
-        <li>⚙️ Sistema de moderación </li>
-      </ul>
+
+      <div class="discord-layout">
+        <ul class="feature-list">
+          <li>🤖 Bot <strong>"FexBot"</strong> creado por mí</li>
+          <li>🎫 Sistema de postulaciones con tickets</li>
+          <li>📋 Transcripción automática de tickets</li>
+          <li>🚫 Sistema de blacklist compartido</li>
+          <li>⚡ Slash commands</li>
+          <li>🛡️ Sistema de moderación</li>
+          <li>➕ Y muchos más...</li>
+        </ul>
+
+        <div class="preview-grid">
+          <div class="discord-mock">
+            <div class="dm-header">
+              <span class="dm-avatar">🤖</span>
+              <div>
+                <span class="dm-name">FexBot <span class="dm-badge">APP</span></span>
+                <span class="dm-tag">FexBot#0001</span>
+              </div>
+            </div>
+            <p class="dm-text">¡Hola! Postulación recibida, revisando tu ticket...</p>
+          </div>
+
+          <div class="discord-mock">
+            <div class="dm-header">
+              <span class="dm-avatar">📋</span>
+              <div>
+                <span class="dm-name">FexBot <span class="dm-badge">APP</span></span>
+              </div>
+            </div>
+            <p class="dm-text">✅ Ticket cerrado. Transcripción guardada en el canal de logs.</p>
+          </div>
+
+          <div class="file-list">
+            <span><span class="js-icon">JS</span> postulaciones.js</span>
+            <span><span class="js-icon">JS</span> blacklist.js</span>
+            <span><span class="js-icon">JS</span> tickets.js</span>
+            <span><span class="js-icon">JS</span> index.js</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- MINECRAFT -->
@@ -76,20 +111,21 @@
         enfocado en darle mecánicas y experiencias nuevas a la comunidad.
       </p>
       <ul class="project-list">
-        <li>🔌 Plugin personalizado — FexGuard - Plugin de anticheat</li>
+        <li>🔌 Plugin personalizado — agregá acá el nombre y qué hace</li>
         <li>🖥️ Configuración de servidor / network</li>
         <li>🛠️ Optimización de rendimiento</li>
       </ul>
     </section>
 
     <!-- CONTACTO -->
-    <section class="card tab-content" id="tab-contacto">
-      <h2><span class="icon">📩</span> Contacto</h2>
-      <p>¿Querés hablar de un proyecto? Escribime por acá:</p>
-      <div class="contact-list">
-        <a href="#" target="_blank">💬 Discord</a>
-        <a href="#" target="_blank">🐙 GitHub</a>
-      </div>
+    <section class="card tab-content contacto-card" id="tab-contacto">
+      <h2><span class="icon">📨</span> ¡Contáctame!</h2>
+      <p class="contacto-text">
+        ¿Tienes una idea en mente? Hablemos por Discord o mira mi trabajo.
+      </p>
+      <a href="#" target="_blank" class="discord-btn">
+        <span class="discord-icon">💬</span> Ir a mi Discord
+      </a>
     </section>
 
   </main>
