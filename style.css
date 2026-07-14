@@ -13,7 +13,6 @@ body {
   position: relative;
 }
 
-/* ---------- Header ---------- */
 header {
   text-align: center;
   padding: 40px 20px 20px;
@@ -80,7 +79,6 @@ nav {
 .nav-contacto { color: #4dabf7; border-color: #4dabf7; }
 .nav-contacto:hover, .nav-contacto.active { background: #4dabf7; color: #1a1a1a; }
 
-/* ---------- Main / Cards ---------- */
 main {
   max-width: 900px;
   margin: 40px auto 80px;
@@ -144,7 +142,6 @@ main {
   border-left: 3px solid #4dabf7;
 }
 
-/* ---------- Discord Bot section ---------- */
 .discord-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -239,7 +236,6 @@ main {
   margin-right: 8px;
 }
 
-/* ---------- Minecraft section ---------- */
 .server-list {
   display: flex;
   flex-direction: column;
@@ -338,7 +334,6 @@ main {
   margin: 0;
 }
 
-/* ---------- Contacto section ---------- */
 .contacto-card {
   text-align: center;
 }
@@ -371,7 +366,6 @@ main {
   box-shadow: 0 0 20px rgba(88, 101, 242, 0.5);
 }
 
-/* ---------- Floating icons ---------- */
 .floating-icons {
   position: fixed;
   inset: 0;
@@ -392,7 +386,6 @@ main {
   50% { transform: translateY(-25px) rotate(12deg); }
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 700px) {
   .discord-layout { grid-template-columns: 1fr; }
   .preview-grid { grid-template-columns: 1fr; }
