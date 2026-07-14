@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a0b2e 0%, #0d0d1a 45%, #061a10 100%);
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ---------- Header ---------- */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(120, 200, 255, 0.5);
+}
+
+.highlight {
+  background: linear-gradient(90deg, #4dabf7, #c77dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  color: #ccc;
+  margin: 10px 0 25px;
+  font-size: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: 0.25s ease;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  transform: scale(1.05);
+}
+
+.nav-principal { color: #fff; border-color: #fff; }
+.nav-principal:hover, .nav-principal.active { background: #fff; color: #1a1a1a; }
+
+.nav-info { color: #ffd93d; border-color: #ffd93d; }
+.nav-info:hover, .nav-info.active { background: #ffd93d; color: #1a1a1a; }
+
+.nav-discord { color: #c77dff; border-color: #c77dff; }
+.nav-discord:hover, .nav-discord.active { background: #c77dff; color: #1a1a1a; }
+
+.nav-minecraft { color: #4ade80; border-color: #4ade80; }
+.nav-minecraft:hover, .nav-minecraft.active { background: #4ade80; color: #1a1a1a; }
+
+.nav-contacto { color: #4dabf7; border-color: #4dabf7; }
+.nav-contacto:hover, .nav-contacto.active { background: #4dabf7; color: #1a1a1a; }
+
+/* ---------- Main / Cards ---------- */
+main {
+  max-width: 800px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.card {
+  background: rgba(15, 15, 25, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card h2 {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card p {
+  line-height: 1.75;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.tags span {
+  color: #eee;
+  font-size: 0.95rem;
+}
+
+.project-list, .contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-list li {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 10px 14px;
+  border-radius: 10px;
+  border-left: 3px solid #4dabf7;
+}
+
+.contact-list a {
+  color: #4dabf7;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.contact-list a:hover { text-decoration: underline; }
+
+/* ---------- Floating icons ---------- */
+.floating-icons {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.floating-icons .icon {
+  position: absolute;
+  font-size: 24px;
+  opacity: 0.4;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-25px) rotate(12deg); }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  h1 { font-size: 2.2rem; }
+  .nav-btn { padding: 8px 14px; font-size: 0.8rem; }
+  .tags { grid-template-columns: 1fr; }
+}
