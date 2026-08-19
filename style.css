@@ -334,6 +334,44 @@ main {
   margin: 0;
 }
 
+.fexplugins-card {
+  background: linear-gradient(135deg, rgba(199, 125, 255, 0.1), rgba(77, 171, 247, 0.08), rgba(15,15,25,0.4));
+  border: 1px solid rgba(199, 125, 255, 0.3);
+}
+
+.fexplugins-card:hover {
+  border-color: rgba(199, 125, 255, 0.55);
+}
+
+.fexplugins-icon {
+  background: linear-gradient(135deg, rgba(199, 125, 255, 0.25), rgba(77, 171, 247, 0.25));
+}
+
+.fexplugins-highlight {
+  background: linear-gradient(90deg, #4dabf7, #c77dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.fexplugins-role {
+  background: linear-gradient(90deg, #4dabf7, #c77dff);
+  color: #0d0d1a;
+}
+
+.fexplugins-plugin {
+  border: 1px solid rgba(199, 125, 255, 0.18);
+}
+
+.fexplugins-plugin:hover {
+  border-color: rgba(199, 125, 255, 0.5);
+}
+
+.fexplugins-label {
+  background: rgba(199, 125, 255, 0.18);
+  color: #c77dff;
+}
+
 .contacto-card {
   text-align: center;
 }
