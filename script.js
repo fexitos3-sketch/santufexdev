@@ -1,7 +1,5 @@
-
 const container = document.querySelector('.floating-icons');
 const emojis = ['🤖', '⛏️', '💎', '⚡'];
-
 for (let i = 0; i < 10; i++) {
   const el = document.createElement('div');
   el.className = 'icon';
@@ -29,5 +27,4 @@ buttons.forEach(btn => {
   btn.addEventListener('click', () => showTab(btn.dataset.tab));
 });
 
-// Marcar "Principal" como activo al cargar
 showTab('principal');
