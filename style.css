@@ -255,6 +255,31 @@ main {
   transform: translateY(-2px);
 }
 
+.server-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.minevoid-card {
+  background: linear-gradient(135deg, rgba(199, 125, 255, 0.1), rgba(15,15,25,0.4));
+  border: 1px solid rgba(199, 125, 255, 0.3);
+}
+
+.minevoid-card:hover {
+  border-color: rgba(199, 125, 255, 0.55);
+}
+
+.minevoid-icon {
+  background: rgba(199, 125, 255, 0.15);
+}
+
+.minevoid-role {
+  background: #c77dff;
+  color: #1a0b2e;
+}
+
 .server-header {
   display: flex;
   align-items: center;
